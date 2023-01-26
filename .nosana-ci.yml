@@ -19,8 +19,8 @@ jobs:
     # Install dependencies
     - name: install
       commands:
-        - npm ci
-        - npm run test
+        - npm ci --legacy-peer-deps
+        - npm run test 
       artifacts: # artifact for the next job
         - name: node_modules
           path: ./
