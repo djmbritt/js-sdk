@@ -8,7 +8,7 @@ global:
     # Git, trigger on these branches
     trigger:
         branch:
-            - main
+            - master
 
     # Environment variables
     environment:
