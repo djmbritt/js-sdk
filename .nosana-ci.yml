@@ -1,18 +1,13 @@
 # .nosana-ci.yml
 nosana:
-    description: NPM Template
+    description: StreamFlow JS-SDK Nosana Pipeline
 
 global:
     image: registry.hub.docker.com/library/node:18
 
-    # Git, trigger on these branches
     trigger:
         branch:
             - master
-
-    # Environment variables
-    environment:
-        APP_ENV: production # comment here about this var
 
 jobs:
 
@@ -21,6 +16,3 @@ jobs:
       commands:
         - npm ci --legacy-peer-deps
         - npm run test 
-      artifacts: # artifact for the next job
-        - name: node_modules
-          path: ./
