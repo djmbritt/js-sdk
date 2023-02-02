@@ -23,6 +23,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@polkadot/x-textdecoder": "^10.3.1",
     "@polkadot/x-textencoder": "^10.3.1",
     "@project-serum/anchor": "^0.16.2",
     "@project-serum/common": "^0.0.1-beta.3",
